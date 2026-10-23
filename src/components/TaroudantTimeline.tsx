@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 
 export const TaroudantTimeline: React.FC = () => {
-  const { language, timeline } = useCms();
+  const { language, timeline } = useApp();
 
   const title = {
     en: 'Taroudant, slowly.',

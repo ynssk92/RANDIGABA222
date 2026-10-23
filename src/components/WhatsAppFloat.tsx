@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { MessageCircle } from 'lucide-react';
 
 export const WhatsAppFloat: React.FC = () => {
-  const { settings, language } = useCms();
+  const { settings, language } = useApp();
 
   const cleanPhone = settings.phone.replace(/[^0-9]/g, '');
   const encodedMsg = encodeURIComponent(settings.whatsappMessage);

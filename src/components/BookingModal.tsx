@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 import { X, CheckCircle, MessageSquare, PhoneCall, ExternalLink } from 'lucide-react';
 
@@ -12,7 +12,7 @@ export const BookingModal: React.FC = () => {
     addBooking,
     settings,
     language
-  } = useCms();
+  } = useApp();
 
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');

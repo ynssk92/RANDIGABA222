@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Room } from '../types';
 
 export const Rooms: React.FC = () => {
-  const { language, rooms, setActiveRoomModal, openBookingForRoom } = useCms();
+  const { language, rooms, setActiveRoomModal, openBookingForRoom } = useApp();
 
   const title = {
     en: 'Rooms for unhurried days.',

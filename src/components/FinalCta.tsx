@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 
 export const FinalCta: React.FC = () => {
-  const { language, openBookingForRoom } = useCms();
+  const { language, openBookingForRoom } = useApp();
 
   const titleLine1 = {
     en: 'Perhaps it’s time',

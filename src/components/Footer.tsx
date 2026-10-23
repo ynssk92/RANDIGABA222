@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
-import { MapPin, Phone, Mail, Instagram, ShieldCheck, Compass } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Compass } from 'lucide-react';
 
 export const Footer: React.FC = () => {
-  const { language, setLanguage, settings, setIsAdminOpen, setIs404Open } = useCms();
+  const { language, setLanguage, settings, setIs404Open } = useApp();
 
   return (
     <footer id="footer" className="bg-[#24241F] text-[#F7F3EA] pt-20 pb-12 border-t border-[#4B502E]/30">
@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
           <Logo variant="large" light={true} withSubtitle={true} className="items-center" />
         </div>
 
-        {/* Bottom Bar: Copyright, Language, Admin Portal, 404 Preview */}
+        {/* Bottom Bar: Copyright, Language, 404 Preview */}
         <div className="pt-8 border-t border-[#4B502E]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-[#EFE8DA]/60">
           <div>
             © {new Date().getFullYear()} Dar Randigaba. All rights reserved.
@@ -149,18 +149,6 @@ export const Footer: React.FC = () => {
               className="hover:text-[#D9C8AE] transition-colors cursor-pointer"
             >
               {language === 'fr' ? 'Page 404' : language === 'ar' ? 'صفحة 404' : '404 Preview'}
-            </button>
-
-            <span aria-hidden="true">·</span>
-
-            {/* Admin CMS Trigger */}
-            <button
-              type="button"
-              onClick={() => setIsAdminOpen(true)}
-              className="hover:text-[#D9C8AE] transition-colors flex items-center gap-1 cursor-pointer"
-            >
-              <ShieldCheck size={14} />
-              <span>Admin CMS</span>
             </button>
           </div>
         </div>

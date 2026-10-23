@@ -134,41 +134,10 @@ const loginRateLimiterMiddleware = (req: Request, res: Response, next: NextFunct
   next();
 };
 
-// SERVER-SIDE ROUTE GUARD: Protect all /admin page routes and redirect unauthenticated requests to the login page
-const requireAdminPageAuth = (req: Request, res: Response, next: NextFunction) => {
-  const token = req.cookies?.auth_token;
-
-  if (!token) {
-    // Unauthenticated: redirect immediately to login prompt
-    return res.redirect('/?admin_login=1#admin');
-  }
-
-  try {
-    const decoded = jwt.verify(token, JWT_SECRET) as { username: string; role: string };
-    const admin = db.findAdminByUsername(decoded.username);
-    if (!admin) {
-      res.clearCookie('auth_token', {
-        httpOnly: true,
-        secure: true,
-        sameSite: 'strict',
-        path: '/'
-      });
-      return res.redirect('/?admin_login=1#admin');
-    }
-    // Valid session: proceed to load admin SPA
-    next();
-  } catch {
-    res.clearCookie('auth_token', {
-      httpOnly: true,
-      secure: true,
-      sameSite: 'strict',
-      path: '/'
-    });
-    return res.redirect('/?admin_login=1#admin');
-  }
-};
-
-app.use(['/admin', '/admin/*'], requireAdminPageAuth);
+// Direct navigation to /admin redirects immediately to the public homepage
+app.get(['/admin', '/admin/*'], (_req: Request, res: Response) => {
+  return res.redirect(302, '/');
+});
 
 // API ROUTES
 
@@ -315,66 +284,9 @@ app.get('/api/seo', (_req: Request, res: Response) => {
   return res.json({ success: true, seo });
 });
 
-// 6. Protected CMS API endpoint group: All /api/admin/* endpoints require authenticated JWT
-app.use('/api/admin', authenticateToken);
-app.get('/api/admin/status', (req: AuthRequest, res: Response) => {
-  return res.json({
-    status: 'online',
-    secured: true,
-    storage: 'persistent_database',
-    user: req.user
-  });
-});
-
-// 7. Update SEO & Meta Settings (Protected Admin Endpoint)
-app.put('/api/admin/seo', (req: AuthRequest, res: Response) => {
-  const {
-    title,
-    metaDescription,
-    ogTitle,
-    ogDescription,
-    ogImage,
-    twitterCard,
-    canonicalUrl,
-    keywords,
-    robots
-  } = req.body;
-
-  if (title !== undefined && (typeof title !== 'string' || title.trim().length === 0)) {
-    return res.status(400).json({ error: 'Page Title must be a non-empty string.' });
-  }
-
-  if (metaDescription !== undefined && typeof metaDescription !== 'string') {
-    return res.status(400).json({ error: 'Meta description must be a string.' });
-  }
-
-  if (ogImage !== undefined && typeof ogImage !== 'string') {
-    return res.status(400).json({ error: 'OpenGraph image URL must be a string.' });
-  }
-
-  const updatedBy = req.user?.username || 'admin';
-  const updatedSeo = db.updateSeoSettings({
-    ...(title !== undefined ? { title: title.trim() } : {}),
-    ...(metaDescription !== undefined ? { metaDescription: metaDescription.trim() } : {}),
-    ...(ogTitle !== undefined ? { ogTitle: ogTitle.trim() } : {}),
-    ...(ogDescription !== undefined ? { ogDescription: ogDescription.trim() } : {}),
-    ...(ogImage !== undefined ? { ogImage: ogImage.trim() } : {}),
-    ...(twitterCard !== undefined ? { twitterCard } : {}),
-    ...(canonicalUrl !== undefined ? { canonicalUrl: canonicalUrl.trim() } : {}),
-    ...(keywords !== undefined ? { keywords: keywords.trim() } : {}),
-    ...(robots !== undefined ? { robots: robots.trim() } : {})
-  }, updatedBy);
-
-  db.logSecurityEvent(
-    `SEO & Meta tags updated by ${updatedBy}: "${updatedSeo.title.slice(0, 45)}..."`,
-    req.ip || 'internal'
-  );
-
-  return res.json({
-    success: true,
-    message: 'SEO & Meta tags updated and persisted to database successfully.',
-    seo: updatedSeo
-  });
+// All /api/admin/* endpoints are decommissioned and return 404
+app.all(['/api/admin', '/api/admin/*'], (_req: Request, res: Response) => {
+  return res.status(404).json({ error: 'Administration area decommissioned.' });
 });
 
 // VITE SPA INTEGRATION

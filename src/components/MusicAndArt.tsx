@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const MusicAndArt: React.FC = () => {
-  const { language } = useCms();
+  const { language } = useApp();
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const title = {

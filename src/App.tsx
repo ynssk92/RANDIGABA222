@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { CmsProvider, useCms } from './context/CmsContext';
+import { AppProvider, useApp } from './context/AppContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { EditorialIntro } from './components/EditorialIntro';
@@ -21,12 +21,11 @@ import { BookingModal } from './components/BookingModal';
 import { RoomDetailModal } from './components/RoomDetailModal';
 import { ArticleModal } from './components/ArticleModal';
 import { WhatsAppFloat } from './components/WhatsAppFloat';
-import { AdminPanel } from './components/AdminPanel';
 import { NotFoundView } from './components/NotFoundView';
 import { applySeoMetadataToHead } from './utils/seo';
 
 const MainStoryContent: React.FC = () => {
-  const { sections, is404Open, setIsAdminOpen } = useCms();
+  const { is404Open } = useApp();
 
   // Load and synchronize dynamic SEO metadata from database on mount
   useEffect(() => {
@@ -38,17 +37,17 @@ const MainStoryContent: React.FC = () => {
         }
       })
       .catch(() => {
-        // Fallback to static HTML tags if network unavailable
+        // Fallback to static head tags if offline or network unavailable
       });
   }, []);
 
-  // Automatic route detection: /admin or #admin redirects to Login / CMS
+  // Ensure /admin or #admin direct access redirects cleanly to the public homepage
   useEffect(() => {
     const handleUrlCheck = () => {
       const path = window.location.pathname;
       const hash = window.location.hash;
       if (path === '/admin' || path.startsWith('/admin/') || hash === '#admin') {
-        setIsAdminOpen(true);
+        window.history.replaceState(null, '', '/');
       }
     };
     handleUrlCheck();
@@ -58,60 +57,34 @@ const MainStoryContent: React.FC = () => {
       window.removeEventListener('popstate', handleUrlCheck);
       window.removeEventListener('hashchange', handleUrlCheck);
     };
-  }, [setIsAdminOpen]);
+  }, []);
 
   if (is404Open) {
     return <NotFoundView />;
   }
-
-  // Render sections strictly based on CMS Visual Page Builder order & enabled status
-  const sortedSections = [...sections].sort((a, b) => a.order - b.order);
-
-  const renderSectionComponent = (id: string) => {
-    switch (id) {
-      case 'hero':
-        return <Hero key="hero" />;
-      case 'intro':
-        return <EditorialIntro key="intro" />;
-      case 'dar':
-        return <TheDar key="dar" />;
-      case 'rooftop':
-        return <Rooftop key="rooftop" />;
-      case 'slowtravel':
-        return <SlowTravel key="slowtravel" />;
-      case 'rooms':
-        return <Rooms key="rooms" />;
-      case 'breakfast':
-        return <Breakfast key="breakfast" />;
-      case 'host':
-        return <HostSaid key="host" />;
-      case 'music':
-        return <MusicAndArt key="music" />;
-      case 'taroudant':
-        return <TaroudantTimeline key="taroudant" />;
-      case 'experiences':
-        return <Experiences key="experiences" />;
-      case 'reviews':
-        return <GuestReviews key="reviews" />;
-      case 'gallery':
-        return <Gallery key="gallery" />;
-      case 'journal':
-        return <Journal key="journal" />;
-      case 'cta':
-        return <FinalCta key="cta" />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <div className="relative min-h-screen bg-[#F7F3EA] text-[#24241F] overflow-x-hidden selection:bg-[#4B502E] selection:text-[#F7F3EA]">
       {/* Editorial Header */}
       <Header />
 
-      {/* Dynamic Continuous Scroll Story */}
+      {/* Curated Editorial Story Sections */}
       <main>
-        {sortedSections.map((sec) => (sec.enabled ? renderSectionComponent(sec.id) : null))}
+        <Hero />
+        <EditorialIntro />
+        <TheDar />
+        <Rooftop />
+        <SlowTravel />
+        <Rooms />
+        <Breakfast />
+        <HostSaid />
+        <MusicAndArt />
+        <TaroudantTimeline />
+        <Experiences />
+        <GuestReviews />
+        <Gallery />
+        <Journal />
+        <FinalCta />
       </main>
 
       {/* Editorial Footer */}
@@ -124,15 +97,14 @@ const MainStoryContent: React.FC = () => {
       <BookingModal />
       <RoomDetailModal />
       <ArticleModal />
-      <AdminPanel />
     </div>
   );
 };
 
 export default function App() {
   return (
-    <CmsProvider>
+    <AppProvider>
       <MainStoryContent />
-    </CmsProvider>
+    </AppProvider>
   );
 }

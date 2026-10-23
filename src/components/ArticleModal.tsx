@@ -1,10 +1,10 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 import { X, ArrowLeft } from 'lucide-react';
 
 export const ArticleModal: React.FC = () => {
-  const { activeArticleModal, setActiveArticleModal, language, articles } = useCms();
+  const { activeArticleModal, setActiveArticleModal, language, articles } = useApp();
 
   if (!activeArticleModal) return null;
 

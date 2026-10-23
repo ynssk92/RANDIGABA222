@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 import { Language } from '../types';
 import { Menu, X } from 'lucide-react';
 
 export const Header: React.FC = () => {
-  const { language, setLanguage, openBookingForRoom, isRTL } = useCms();
+  const { language, setLanguage, openBookingForRoom, isRTL } = useApp();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

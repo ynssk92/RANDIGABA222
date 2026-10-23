@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
-  const { language, openBookingForRoom } = useCms();
+  const { language, openBookingForRoom } = useApp();
 
   const content = {
     label: {

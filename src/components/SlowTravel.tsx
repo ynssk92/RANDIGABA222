@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 
 export const SlowTravel: React.FC = () => {
-  const { language } = useCms();
+  const { language } = useApp();
 
   const title = {
     en: 'Stay slowly.',

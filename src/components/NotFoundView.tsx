@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 
 export const NotFoundView: React.FC = () => {
-  const { language, setIs404Open } = useCms();
+  const { language, setIs404Open } = useApp();
 
   const headline = {
     en: 'Lost somewhere between the Medina and the mountains?',

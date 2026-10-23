@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { GalleryItem } from '../types';
 import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 
 export const Gallery: React.FC = () => {
-  const { language, gallery } = useCms();
+  const { language, gallery } = useApp();
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 

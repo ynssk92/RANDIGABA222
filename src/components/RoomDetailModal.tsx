@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Logo } from './Logo';
 import { X, Check } from 'lucide-react';
 
 export const RoomDetailModal: React.FC = () => {
-  const { activeRoomModal, setActiveRoomModal, language, openBookingForRoom } = useCms();
+  const { activeRoomModal, setActiveRoomModal, language, openBookingForRoom } = useApp();
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   if (!activeRoomModal) return null;

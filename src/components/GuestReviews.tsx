@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const GuestReviews: React.FC = () => {
-  const { language, reviews } = useCms();
+  const { language, reviews } = useApp();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const title = {

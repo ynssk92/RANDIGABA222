@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { Experience } from '../types';
 
 export const Experiences: React.FC = () => {
-  const { language, experiences, openBookingForRoom } = useCms();
+  const { language, experiences, openBookingForRoom } = useApp();
 
   const title = {
     en: 'Words from a friend.',

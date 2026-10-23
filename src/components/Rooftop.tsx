@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 
 export const Rooftop: React.FC = () => {
-  const { language } = useCms();
+  const { language } = useApp();
 
   const title = {
     en: 'Above the red walls of Taroudant.',

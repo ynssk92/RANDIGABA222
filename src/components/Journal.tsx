@@ -1,9 +1,9 @@
 import React from 'react';
-import { useCms } from '../context/CmsContext';
+import { useApp } from '../context/AppContext';
 import { JournalArticle } from '../types';
 
 export const Journal: React.FC = () => {
-  const { language, articles, setActiveArticleModal } = useCms();
+  const { language, articles, setActiveArticleModal } = useApp();
 
   const title = {
     en: 'Notes from Taroudant.',
