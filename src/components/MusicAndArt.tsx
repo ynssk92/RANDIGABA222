@@ -40,14 +40,14 @@ export const MusicAndArt: React.FC = () => {
       tag: 'ART & LIGHT'
     },
     {
-      title: { en: 'Terrace Botany & Flowering Cactus', fr: 'Botanique & Cactus Fleuri', ar: 'نباتات الشرفة والصبار المزهر' },
+      title: { en: 'Rooftop Coffee & Upper Deck', fr: 'Le Bar à Café & Terrasse', ar: 'ركن القهوة وشرفة السطح' },
       detail: {
-        en: 'Night-blooming white desert cacti and terracotta planters basking on the upper terrace.',
-        fr: 'Cactus du désert aux fleurs blanches nocturnes et poteries de terre cuite sur la terrasse supérieure.',
-        ar: 'صبار صحراوي يزهر بأزهار بيضاء ليلية وأوانٍ فخارية تتشمس على الشرفة العلوية.'
+        en: 'Fresh morning coffee and mint infusions on the open-air terrace with handcrafted daybeds and observation stairs.',
+        fr: 'Café frais du matin et infusions sur la terrasse avec banquettes faites main et escalier vers le belvédère.',
+        ar: 'قهوة الصباح الطازجة والشاي بالنعناع على شرفة السطح مع الأرائك المريحة والدرج المؤدي إلى مرصد السماء.'
       },
       image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.18_455a63f1.jpeg',
-      tag: 'EARTH & SHAPE'
+      tag: 'ROOFTOP RITUAL'
     },
     {
       title: { en: 'Cobalt Zellige & Hand-Beaten Copper', fr: 'Zellige Cobalt & Cuivre Martelé', ar: 'الزليج الأزرق والنحاس المطروق' },

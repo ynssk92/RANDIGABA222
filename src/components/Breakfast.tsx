@@ -59,7 +59,7 @@ export const Breakfast: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col">
             <div className="relative group overflow-hidden bg-[#EFE8DA] shadow-xs aspect-[4/3] md:aspect-[16/11]">
               <img
-                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__11__abdf850a.jpeg"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.18_455a63f1.jpeg"
                 alt="Fresh Rooftop Coffee and Morning Breakfast Station at Dar Randigaba"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
               />

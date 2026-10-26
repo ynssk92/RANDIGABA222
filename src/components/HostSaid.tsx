@@ -43,14 +43,14 @@ export const HostSaid: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative group overflow-hidden bg-[#3b4025] shadow-xs aspect-[3/4]">
               <img
-                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__8__f674b9a1.jpeg"
-                alt="Evening Atmosphere in the Courtyard Art Salon of Dar Randigaba"
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103 filter contrast-[1.03]"
+                src="/assets/aistudio/randigaba-said_85fd4853.png"
+                alt="Said, Host and Curator of Dar Randigaba"
+                className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-103 filter contrast-[1.02]"
               />
             </div>
             <div className="mt-3 flex items-center justify-between text-[11px] font-sans tracking-[0.2em] uppercase text-[#f8f4e7]/80">
-              <span>SAID’S ART SALON · HOST & CURATOR</span>
-              <span>TAROUDANT RESIDENCE</span>
+              <span>SAID · HOST & CURATOR</span>
+              <span>TAROUDANT RESIDENT</span>
             </div>
           </div>
 

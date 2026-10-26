@@ -28,7 +28,7 @@ export const SlowTravel: React.FC = () => {
         fr: 'Aucun réveil. Éveillez-vous au chant des oiseaux du patio, sous une lumière douce et un petit-déjeuner paré de pains cuits au feu de bois et d’amlou du Souss.',
         ar: 'بلا منبهات؛ استيقظ على تغريد العصافير وضوء الصباح الوارف، ومائدة تفوح بعطر الخبز البلدي وأملو وادي سوس المصنوع باللوز وزيت الأركان.',
       },
-      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__11__abdf850a.jpeg',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.18_455a63f1.jpeg',
     },
     {
       title: {
