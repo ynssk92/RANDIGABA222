@@ -43,15 +43,14 @@ export const HostSaid: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative group overflow-hidden bg-[#3b4025] shadow-xs aspect-[3/4]">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=85"
-                alt="Said, Host of Dar Randigaba in Taroudant"
-                referrerPolicy="no-referrer"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__8__f674b9a1.jpeg"
+                alt="Evening Atmosphere in the Courtyard Art Salon of Dar Randigaba"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103 filter contrast-[1.03]"
               />
             </div>
             <div className="mt-3 flex items-center justify-between text-[11px] font-sans tracking-[0.2em] uppercase text-[#f8f4e7]/80">
-              <span>SAID · HOST & CURATOR</span>
-              <span>TAROUDANT RESIDENT</span>
+              <span>SAID’S ART SALON · HOST & CURATOR</span>
+              <span>TAROUDANT RESIDENCE</span>
             </div>
           </div>
 

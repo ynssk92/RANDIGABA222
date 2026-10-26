@@ -48,11 +48,9 @@ export const Hero: React.FC = () => {
       {/* Background Photography with subtle slow scale */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2200&q=85"
-          alt="Dar Randigaba Rooftop View Over Taroudant Ramparts at Golden Hour"
-          referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center filter brightness-[0.82] contrast-[1.05] scale-105 animate-[pulse_10s_ease-in-out_infinite] transition-transform duration-1000 ease-out"
-          style={{ animationDuration: '24s' }}
+          src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__11__abdf850a.jpeg"
+          alt="Dar Randigaba Rooftop Coffee Terrace and Observation Lookout at Golden Hour"
+          className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05] scale-102 hover:scale-105 transition-transform duration-1000 ease-out"
         />
         {/* Editorial atmospheric gradient scrim */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#24241F] via-[#24241F]/40 to-[#24241F]/30" />

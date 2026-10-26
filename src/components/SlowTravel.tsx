@@ -28,7 +28,7 @@ export const SlowTravel: React.FC = () => {
         fr: 'Aucun réveil. Éveillez-vous au chant des oiseaux du patio, sous une lumière douce et un petit-déjeuner paré de pains cuits au feu de bois et d’amlou du Souss.',
         ar: 'بلا منبهات؛ استيقظ على تغريد العصافير وضوء الصباح الوارف، ومائدة تفوح بعطر الخبز البلدي وأملو وادي سوس المصنوع باللوز وزيت الأركان.',
       },
-      image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__11__abdf850a.jpeg',
     },
     {
       title: {
@@ -41,7 +41,7 @@ export const SlowTravel: React.FC = () => {
         fr: 'Savourez les récoltes des vergers familiaux : oranges amères, olives gorgées de soleil, safran de Taliouine et herbes aromatiques de l’Atlas.',
         ar: 'تذوق خيرات بساتين المنطقة العائلية: النارنج العطري، الزيتون البلدي، زعفران تاليوين الأصيل، وأعشاب الجبال العطرية.',
       },
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__9__82383fe1.jpeg',
     },
     {
       title: {
@@ -54,7 +54,7 @@ export const SlowTravel: React.FC = () => {
         fr: 'Une demeure habitée par des disques vinyles, des guitares acoustiques et des ouvrages sur l’architecture, la poésie et le jazz à feuilleter aux chandelles.',
         ar: 'دار تزخر بأسطوانات الفينيل النادرة، والغيتارات، وكتب العمارة والشعر وموسيقى الجاز التي تستمتع بها على ضوء الشموع.',
       },
-      image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__10__84b20b74.jpeg',
     },
     {
       title: {
@@ -67,7 +67,7 @@ export const SlowTravel: React.FC = () => {
         fr: 'Rejoignez la médina sans hâte. Promenades ombragées dans les ruelles calmes, échanges spontanés avec les artisans et balades le long des remparts.',
         ar: 'اخرج إلى أزقة المدينة بلا عجلة؛ جولات متأنية في الدروب الظليلة، وأحاديث عفوية مع حرفيي الدباغة والنحاس عند أسوار تارودانت.',
       },
-      image: 'https://images.unsplash.com/photo-1512958789358-4dacacbe09c3?auto=format&fit=crop&w=800&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.11.09_6dca3c18.jpeg',
     },
   ];
 

@@ -40,10 +40,9 @@ export const FinalCta: React.FC = () => {
       {/* Sunset Rooftop Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=2200&q=85"
-          alt="Sunset over Taroudant from Dar Randigaba"
-          referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center filter brightness-[0.72] contrast-[1.05]"
+          src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__5__fc1ff083.jpeg"
+          alt="Sunset over Taroudant from Dar Randigaba Rooftop"
+          className="w-full h-full object-cover object-center filter brightness-[0.70] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#24241F] via-[#24241F]/40 to-[#24241F]/60" />
       </div>

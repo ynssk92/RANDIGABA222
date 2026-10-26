@@ -45,9 +45,8 @@ export const TheDar: React.FC = () => {
           <div className="lg:col-span-7 space-y-4">
             <div className="relative group overflow-hidden bg-[#D9C8AE]">
               <img
-                src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1600&q=85"
-                alt="Dar Randigaba Inner Courtyard and Moroccan Architecture"
-                referrerPolicy="no-referrer"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__7__db89f450.jpeg"
+                alt="Dar Randigaba Central Courtyard Atrium with Geometric Tiles and Blue Doors"
                 className="w-full aspect-[4/3] md:aspect-[16/11] object-cover transition-transform duration-700 ease-out group-hover:scale-103"
               />
             </div>
@@ -61,9 +60,8 @@ export const TheDar: React.FC = () => {
               <div className="space-y-3">
                 <div className="relative group overflow-hidden bg-[#D9C8AE]">
                   <img
-                    src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1200&q=85"
-                    alt="Vinyl Records and Reading Study in Living Room"
-                    referrerPolicy="no-referrer"
+                    src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__10__84b20b74.jpeg"
+                    alt="Vinyl Records Turntable and Art in the Living Room"
                     className="w-full aspect-square object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
                 </div>
@@ -76,9 +74,8 @@ export const TheDar: React.FC = () => {
               <div className="space-y-3 sm:mt-10">
                 <div className="relative group overflow-hidden bg-[#D9C8AE]">
                   <img
-                    src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=85"
-                    alt="Handmade Terracotta and Tactile Moroccan Details"
-                    referrerPolicy="no-referrer"
+                    src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06_01d61067.jpeg"
+                    alt="Tall Prickly Pear Cactus in Terracotta Urn against Tadelakt Wall"
                     className="w-full aspect-square object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                   />
                 </div>
@@ -95,9 +92,8 @@ export const TheDar: React.FC = () => {
             <div className="space-y-3">
               <div className="relative group overflow-hidden bg-[#D9C8AE]">
                 <img
-                  src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1400&q=85"
-                  alt="Rooftop Terraces at Sunset Overlooking Taroudant"
-                  referrerPolicy="no-referrer"
+                  src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__5__fc1ff083.jpeg"
+                  alt="Rooftop Terraces with Shaded Canopy Overlooking Taroudant"
                   className="w-full aspect-[3/4] object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                 />
               </div>

@@ -59,13 +59,12 @@ export const Breakfast: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col">
             <div className="relative group overflow-hidden bg-[#EFE8DA] shadow-xs aspect-[4/3] md:aspect-[16/11]">
               <img
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1600&q=85"
-                alt="Intimate Moroccan Breakfast on the Terrace at Dar Randigaba"
-                referrerPolicy="no-referrer"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.06__11__abdf850a.jpeg"
+                alt="Fresh Rooftop Coffee and Morning Breakfast Station at Dar Randigaba"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
               />
               <div className="absolute bottom-4 left-4 bg-[#24241F]/80 backdrop-blur-xs text-[#F7F3EA] px-3.5 py-1.5 text-xs font-sans tracking-[0.2em] uppercase">
-                TERRACE TABLE · SERVED UNTIL MIDDAY
+                ROOFTOP COFFEE BAR · SERVED UNTIL MIDDAY
               </div>
             </div>
             <div className="mt-3 flex items-center justify-between text-[11px] font-sans tracking-[0.2em] uppercase text-[#4B502E]">

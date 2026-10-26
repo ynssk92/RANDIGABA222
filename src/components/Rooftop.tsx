@@ -27,9 +27,8 @@ export const Rooftop: React.FC = () => {
       {/* Full-width photography with parallax scale feel */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2200&q=85"
-          alt="Panoramic Rooftop Overlooking Medina and Atlas Mountains"
-          referrerPolicy="no-referrer"
+          src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__5__fc1ff083.jpeg"
+          alt="Panoramic Rooftop Terrace at Dar Randigaba Overlooking Taroudant"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05] scale-102 hover:scale-105 transition-transform duration-1000 ease-out"
         />
         {/* Soft editorial contrast scrim */}

@@ -26,47 +26,47 @@ export const MusicAndArt: React.FC = () => {
         fr: 'Miles Davis, Bill Evans, Nina Simone et chants gnaouas tournant sous la clarté feutrée.',
         ar: 'مايلز ديفيس، وبيل إيفانز، ونينا سيمون، وتسجيلات غناوة الأصيلة تدور تحت الأضواء الدافئة.'
       },
-      image: 'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__10__84b20b74.jpeg',
       tag: 'SOUND & MEMORY'
     },
     {
-      title: { en: 'The Acoustic Guitar', fr: 'La Guitare Acoustique', ar: 'الغيتار الصوتي' },
+      title: { en: 'The Art Salon & Night Lantern', fr: 'Le Salon d’Art & la Lanterne', ar: 'صالون اللوحات وفانوس المساء' },
       detail: {
-        en: 'An old cedar guitar leaning against the salon bookshelf, tuned and ready for any wandering musician.',
-        fr: 'Une guitare en cèdre appuyée contre la bibliothèque du salon, accordée pour les hôtes mélomanes.',
-        ar: 'غيتار من خشب الأرز يستند إلى رفوف مكتبة الصالون، جاهز لكل عازف ومحب للألحان.'
+        en: 'Warm paper cylinder lanterns casting amber shadows over curated art portraits on the salon walls.',
+        fr: 'Grandes lanternes de papier diffusant une clarté ambrée sur les portraits d’art ornant les murs du salon.',
+        ar: 'فوانيس ورقية أسطوانية تضفي إضاءة عنبرية دافئة على جدران الصالون المزدانة باللوحات الفنية.'
       },
-      image: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1000&q=80',
-      tag: 'INSTRUMENT'
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__8__f674b9a1.jpeg',
+      tag: 'ART & LIGHT'
     },
     {
-      title: { en: 'The Curated Library', fr: 'La Bibliothèque Choisie', ar: 'المكتبة المختارة' },
+      title: { en: 'Terrace Botany & Flowering Cactus', fr: 'Botanique & Cactus Fleuri', ar: 'نباتات الشرفة والصبار المزهر' },
       detail: {
-        en: 'Volumes on Moroccan vernacular architecture, North African poetry, philosophy, and botanical studies.',
-        fr: 'Monographies d’architecture en pisé, poésie du Maghreb, essais d’art et herbiers botaniques.',
-        ar: 'مؤلفات في عمارة الطين، ودواوين شعر مغربي وعربي، وكتب فلسفية ونباتية للتأمل الهادئ.'
+        en: 'Night-blooming white desert cacti and terracotta planters basking on the upper terrace.',
+        fr: 'Cactus du désert aux fleurs blanches nocturnes et poteries de terre cuite sur la terrasse supérieure.',
+        ar: 'صبار صحراوي يزهر بأزهار بيضاء ليلية وأوانٍ فخارية تتشمس على الشرفة العلوية.'
       },
-      image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80',
-      tag: 'WORDS & INK'
-    },
-    {
-      title: { en: 'Hand-Turned Ceramics', fr: 'Céramiques Modelées', ar: 'فخاريات مطروقة' },
-      detail: {
-        en: 'Earthen vessels from the nearby craft valley of Tiout, holding wild olive sprigs and courtyard flowers.',
-        fr: 'Poteries nées des mains des artisans de Tiout, accueillant rameaux d’olivier et fleurs fraîches.',
-        ar: 'أوانٍ فخارية صاغها خزافو واحة تيوت، تحتضن أغصان الزيتون وزهور الفناء.'
-      },
-      image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1000&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.18_455a63f1.jpeg',
       tag: 'EARTH & SHAPE'
     },
     {
-      title: { en: 'Shadows & Sunlight', fr: 'Ombres & Lumière', ar: 'الظلال والشمس' },
+      title: { en: 'Cobalt Zellige & Hand-Beaten Copper', fr: 'Zellige Cobalt & Cuivre Martelé', ar: 'الزليج الأزرق والنحاس المطروق' },
       detail: {
-        en: 'Geometric wooden lattice screens filtering the intense southern sun into calm, meditative patterns.',
-        fr: 'Moucharabiehs de cèdre sculpté apprivoisant l’éclat du soleil pour créer des dentelles d’ombres.',
-        ar: 'مشربيات خشبية هندسية تروض وهج الشمس لتصنع لوحات من الظل والسكينة.'
+        en: 'Traditional Moroccan zellige tiles paired with custom tagine basins and warm copper taps.',
+        fr: 'Carreaux de zellige traditionnel associés à des vasques façon tajine et des robinetteries de cuivre chaud.',
+        ar: 'بلاط الزليج المغربي التقليدي متناغم مع مغاسل فخارية وصنابير نحاسية مصوغة يدوياً.'
       },
-      image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1000&q=80',
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.44__2__5452f60c.jpeg',
+      tag: 'ANCESTRAL CRAFT'
+    },
+    {
+      title: { en: 'Lattice Ironwork & Shaded Light', fr: 'Fer Forgé & Ombres Filtrées', ar: 'مشربيات الحديد والضوء المصفى' },
+      detail: {
+        en: 'Hand-forged Moroccan window screens creating quiet, contemplative geometric shadow patterns.',
+        fr: 'Moucharabiehs de fer forgé apprivoisant l’éclat du soleil pour composer des dentelles d’ombres.',
+        ar: 'شبابيك من الحديد المطروق يدوياً تروض وهج الشمس وتصنع لوحات هندسية بديعة من الظلال.'
+      },
+      image: '/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.13.44__7__316b59b7.jpeg',
       tag: 'SOLITUDE'
     }
   ];

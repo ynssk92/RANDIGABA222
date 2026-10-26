@@ -70,16 +70,15 @@ export const EditorialIntro: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative group overflow-hidden bg-[#EFE8DA] shadow-xs">
               <img
-                src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85"
-                alt="Architectural Archway and Sunlight at Dar Randigaba"
-                referrerPolicy="no-referrer"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.11.09_6dca3c18.jpeg"
+                alt="Iconic Cobalt Blue Door #110 and Welcome Home Entrance at Dar Randigaba"
                 className="w-full aspect-[3/4] object-cover transition-transform duration-700 ease-out group-hover:scale-103"
               />
             </div>
             {/* Small subtle caption as specified */}
             <div className="mt-3 flex items-center justify-between text-[11px] font-sans tracking-[0.2em] uppercase text-[#4B502E]/80">
               <span>{content.caption[language]}</span>
-              <span>FIG. 01 — ARCH & SHADOW</span>
+              <span>FIG. 01 — DOOR N°110 · WELCOME HOME</span>
             </div>
           </div>
         </div>

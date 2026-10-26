@@ -43,15 +43,14 @@ export const TaroudantTimeline: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative group overflow-hidden bg-[#D9C8AE] shadow-xs aspect-[16/11]">
               <img
-                src="https://images.unsplash.com/photo-1512958789358-4dacacbe09c3?auto=format&fit=crop&w=1600&q=85"
-                alt="Ancient Red Adobe Ramparts of Taroudant"
-                referrerPolicy="no-referrer"
+                src="/assets/aistudio/WhatsApp_Image_2026-10-19_at_17.12.03__5__fc1ff083.jpeg"
+                alt="Dar Randigaba Rooftop Terrace Overlooking Ancient Taroudant"
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
               />
             </div>
             <div className="mt-3 flex items-center justify-between text-[11px] font-sans tracking-[0.2em] uppercase text-[#4B502E]">
-              <span>BAB SELSLA & RAMPARTS</span>
-              <span>EST. 16TH CENTURY</span>
+              <span>DAR RANDIGABA ROOFTOP</span>
+              <span>MEDINA OF TAROUDANT</span>
             </div>
           </div>
         </div>
